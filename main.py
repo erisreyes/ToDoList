@@ -37,6 +37,9 @@ while True:
         # Write the tasks to the file
         with open(filename, "w") as f:
             json.dump(tasks, f)
+
+        print('\n********')
+        view_task()
     elif choice == "2":
         # Edit an existing task in the list
         index = int(input("Enter task number: ")) - 1
